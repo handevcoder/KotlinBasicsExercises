@@ -11,7 +11,11 @@ fun main() {
     val givenString1 = "lari pagi"
 
     val hitung = givenString.toCharArray()
-    print(hitung)
+    val hitung1 = givenString1
+            .replace("\\s".toRegex(), "")
+            .toCharArray()
 
+    println(hitung.indices.last + 1)
+    println(hitung1.indices.last + 1)
 
 }
